@@ -15,6 +15,6 @@ jobs:
         uses: canastro/copy-action@0.0.2
         with:
     # Source file
-          source: D:/f1
+          source: "D:/f1"
     # Target file
-          target: D:/f2
+          target: "D:/f2"

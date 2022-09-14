@@ -5,7 +5,7 @@ jobs:
 
   test:
     name: copy
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, windows-latest]
 
     steps:
       - uses: actions/checkout@v1
@@ -15,6 +15,6 @@ jobs:
         uses: canastro/copy-action@0.0.2
         with:
     # Source file
-          source: /usr/bin
+          source: C:\Users\svelpuri\action\a1
     # Target file
-          target: /downloads
+          target: C:\Users\svelpuri\actions-runner

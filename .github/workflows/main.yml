@@ -5,7 +5,7 @@ jobs:
 
   test:
     name: copy
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v1
@@ -15,6 +15,6 @@ jobs:
         uses: MadaraUchiha/copy-action@0.0.1
         with:
     # Source file
-          source: C:\Users\svelpuri\VirtualBox VMs\Miracle\Logs\VBox.txt
+          source: C:\Users\svelpuri\action\a1
     # Target file
           target: D:\New folder

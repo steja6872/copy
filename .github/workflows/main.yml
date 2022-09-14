@@ -15,6 +15,6 @@ jobs:
         uses: MadaraUchiha/copy-action@0.0.1
         with:
     # Source file
-          source: 'D:\f1\a.txt'
+          source: 'C:\Users\svelpuri\action\a1'
     # Target file
-          target: 'D:\f2'
+          target: 'D:\New folder'

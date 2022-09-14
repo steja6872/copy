@@ -15,6 +15,6 @@ jobs:
         uses: canastro/copy-action@0.0.2
         with:
     # Source file
-          source: /var/*
+          source: '/var/cache'
     # Target file
           target: /downloads/*

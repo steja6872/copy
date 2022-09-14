@@ -15,6 +15,6 @@ jobs:
         uses: canastro/copy-action@0.0.2
         with:
     # Source file
-          source: /downloads
+          source: /usr/bin/*
     # Target file
-          target: /desktop
+          target: /downloads

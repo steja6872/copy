@@ -1,20 +1,14 @@
-name: copy
-on: [push, pull_request]
-
+name: copy files
+on: [push]
 jobs:
 
-  test:
-    name: copy
-    runs-on: windows-latest
-
+  build:
+    name: Build
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Copy file
-  # You may pin to the exact commit or the version.
-  # uses: canastro/copy-action@7ddff6fc153a2ea2cd0fb88ed9750544c051e399
-        uses: canastro/copy-action@0.0.2
-        with:
-    # Source file
-          source: C:\Users\svelpuri\action\a1
-    # Target file
-          target: C:\Users\svelpuri\actions-runner
+    - uses: actions/checkout@master
+    - name: copy file
+      uses: canastro/copy-file-action@master
+      with:
+        source: "tests/a.txt"
+        target: "test-a.txt"

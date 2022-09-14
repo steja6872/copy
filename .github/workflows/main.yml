@@ -10,5 +10,5 @@ jobs:
     - name: copy file
       uses: canastro/copy-file-action@master
       with:
-        source: "downloads/*"
-        target: "test-a.txt"
+        source: "/home/runner/*"
+        target: "/downloads"
